@@ -35,10 +35,11 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'andymass/vim-matchup'
 Plug 'morhetz/gruvbox'
 
-" Fuzzy finder
-Plug 'airblade/vim-rooter'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" File finder
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
+" Required as dependency
 
 " Source code tree visualizer
 Plug 'preservim/nerdtree'
