@@ -28,6 +28,8 @@ call plug#begin()
 Plug 'ciaranm/securemodelines'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'justinmk/vim-sneak'
+Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+Plug 'akinsho/bufferline.nvim'
 
 " GUI enhancements
 Plug 'itchyny/lightline.vim'
@@ -92,5 +94,8 @@ nnoremap <Leader><Leader> <C-^>
 " use rust analyzer for for LSP 
 " lua require'lspconfig'.rust_analyzer.setup({})
 
-" Start nerdtree on startup
-" autocmd VimEnter * NERDTree
+" bufferline set up
+set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF
