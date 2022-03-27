@@ -1,0 +1,10 @@
+[user]
+	email = liang.wang.ice@gmail.com
+	name = Liang Wang
+	signingkey = 38860777BECA1613
+[gpg]
+	program = gpg2
+[commit]
+	gpgsign = true
+[core]
+	editor = nvim
