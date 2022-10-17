@@ -35,7 +35,7 @@ myConfig = desktopConfig
 myModMask     = mod4Mask
 myTerminal    = "alacritty"
 myLayout      = mouseResize $ windowArrange $ layoutHook def
-myBorderWidth = 4
+myBorderWidth = 2
 
 myStartupHook :: X ()
 myStartupHook = do
@@ -43,5 +43,5 @@ myStartupHook = do
      spawnOnce "xrandr --output HDMI-0 --mode 2560x2880 --pos 0x0 --rotate normal --output DP-0 --primary --mode 3840x2160 --pos 2560x720 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-5 --off"
      -- maybe this should spawn always actually
      spawnOnce "dunst"
-     spawnOnce "picom &"
+     spawnOnce "picom --vsync -b"
      spawnOnce "easyeffects --gapplication-service"
