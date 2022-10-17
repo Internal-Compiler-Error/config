@@ -2,11 +2,15 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# to make gpg happy
-set -gx GPG_TTY (tty)
-
-# zoxide is a smarter cd command
+set -x EDITOR (which neovide)
 zoxide init fish | source
+emit nvm_install
 
-# starship is a minimal, blazing-fast, and infinitely customizable prompt for any shell! 
-# starship init fish | source
+
+# Ensure that GPG Agent is used as the SSH agent
+set -e SSH_AUTH_SOCK
+set -U -x SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+
+set -x GPG_TTY (tty)
+
+gpgconf --launch gpg-agent
