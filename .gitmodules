@@ -1,0 +1,6 @@
+[submodule "/home/liangw/.config/kitty/kitty-themes"]
+	path = /home/liangw/.config/kitty/kitty-themes
+	url = https://github.com/dexpota/kitty-themes.git
+[submodule "/home/liangw/.config/alacritty/themes"]
+	path = /home/liangw/.config/alacritty/themes
+	url = https://github.com/alacritty/alacritty-theme.git
