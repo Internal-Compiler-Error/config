@@ -4,3 +4,6 @@
 [submodule "/home/liangw/.config/alacritty/themes"]
 	path = /home/liangw/.config/alacritty/themes
 	url = https://github.com/alacritty/alacritty-theme.git
+[submodule "/home/liangw/.config/nvim"]
+	path = /home/liangw/.config/nvim
+	url = https://github.com/AstroNvim/AstroNvim.git
